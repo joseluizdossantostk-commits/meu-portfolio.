@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de José Luiz dos Santos.">
+    <title>Multimídia | José Luiz dos Santos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="topo">
+                <p class="marca">José Luiz dos Santos</p>
+                <button class="botao-tema" id="botaoTema" type="button" aria-pressed="false">Tema escuro</button>
+            </div>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="curriculo.html">Currículo</a></li>
+                    <li><a href="formulario.html">Contato</a></li>
+                    <li><a href="multimidia.html">Multimídia</a></li>
+                    <li><a href="graficos.html">Gráficos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Multimídia</h1>
+            <p>
+                Nesta página há um vídeo local com controles e um mapa incorporado
+                por meio de um iframe.
+            </p>
+        </section>
+
+        <section class="midia">
+            <article>
+                <h2>Vídeo demonstrativo</h2>
+                <p>
+                    O vídeo abaixo é um arquivo local incluído na pasta <code>img</code>.
+                    Ele possui controles nativos do elemento <code>video</code>.
+                </p>
+                <video controls width="800" poster="">
+                    <source src="img/apresentacao.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <p class="pequeno">
+                    Caso você substitua o arquivo por outro vídeo MP4, mantenha o nome
+                    <strong>apresentacao.mp4</strong> ou altere o caminho no HTML.
+                </p>
+            </article>
+
+            <article>
+                <h2>Mapa — região de Mogi das Cruzes</h2>
+                <iframe title="Mapa da região de Mogi das Cruzes"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-46.22%2C-23.58%2C-46.12%2C-23.48&amp;layer=mapnik"
+                    loading="lazy">
+                </iframe>
+                <p>
+                    <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">
+                        Ver mapa em uma nova página
+                    </a>
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 José Luiz dos Santos</p>
+        <p>Portfólio acadêmico — Desenvolvimento Front-end para Web</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de José Luiz dos Santos.">
+    <title>Gráficos | José Luiz dos Santos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="topo">
+                <p class="marca">José Luiz dos Santos</p>
+                <button class="botao-tema" id="botaoTema" type="button" aria-pressed="false">Tema escuro</button>
+            </div>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="curriculo.html">Currículo</a></li>
+                    <li><a href="formulario.html">Contato</a></li>
+                    <li><a href="multimidia.html">Multimídia</a></li>
+                    <li><a href="graficos.html">Gráficos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Gráficos e desenhos</h1>
+            <p>
+                Esta página demonstra o uso de <code>canvas</code> com JavaScript
+                e de SVG estilizado com CSS externo.
+            </p>
+        </section>
+
+        <section>
+            <h2>Desenho em Canvas</h2>
+            <canvas id="meuCanvas" class="grafico-canvas" width="800" height="420">
+                Seu navegador não suporta o elemento canvas.
+            </canvas>
+            <p class="pequeno">
+                O desenho acima é criado por JavaScript quando a página é carregada.
+            </p>
+        </section>
+
+        <section>
+            <h2>Desenho em SVG</h2>
+            <svg class="svg-exemplo" viewBox="0 0 700 300" role="img" aria-labelledby="tituloSvg descricaoSvg">
+                <title id="tituloSvg">Ilustração de uma interface tecnológica</title>
+                <desc id="descricaoSvg">Um círculo conectado a linhas e um texto representando tecnologia.</desc>
+                <line class="linha" x1="80" y1="150" x2="230" y2="150"></line>
+                <line class="linha" x1="230" y1="150" x2="360" y2="80"></line>
+                <line class="linha" x1="230" y1="150" x2="360" y2="220"></line>
+                <circle class="circulo" cx="80" cy="150" r="42"></circle>
+                <circle class="circulo" cx="360" cy="80" r="32"></circle>
+                <circle class="circulo" cx="360" cy="220" r="32"></circle>
+                <text class="texto-svg" x="425" y="160">Tecnologia</text>
+            </svg>
+            <p>
+                O SVG utiliza classes CSS externas para definir preenchimento,
+                bordas, espessuras e tipografia.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 José Luiz dos Santos</p>
+        <p>Portfólio acadêmico — Desenvolvimento Front-end para Web</p>
+    </footer>
+
+
+</body>
+
+</html>

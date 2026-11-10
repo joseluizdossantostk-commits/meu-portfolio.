@@ -1,0 +1,22 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Temporários e logs
+*.tmp
+*.log
+*.bak
+*~
+
+# Dependências e builds
+node_modules/
+
+# Pacotes compactados (a entrega é o repositório)
+*.zip
+*.rar

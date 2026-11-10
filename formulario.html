@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de José Luiz dos Santos.">
+    <title>Contato | José Luiz dos Santos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="topo">
+                <p class="marca">José Luiz dos Santos</p>
+                <button class="botao-tema" id="botaoTema" type="button" aria-pressed="false">Tema escuro</button>
+            </div>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="curriculo.html">Currículo</a></li>
+                    <li><a href="formulario.html">Contato</a></li>
+                    <li><a href="multimidia.html">Multimídia</a></li>
+                    <li><a href="graficos.html">Gráficos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Entre em contato</h1>
+            <p>
+                Este formulário demonstra diferentes tipos de campos HTML e
+                validação em JavaScript, com mensagens na tela e rascunho automático.
+            </p>
+        </section>
+
+        <section>
+            <form id="formContato" action="#" method="post" novalidate>
+                <div class="campo">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" required minlength="3" autocomplete="name">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data para retorno *</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto *</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="projeto">Projeto</option>
+                        <option value="oportunidade">Oportunidade profissional</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Como prefere receber o retorno? *</legend>
+                    <div class="opcoes">
+                        <label class="opcao">
+                            <input type="radio" name="retorno" value="email" required>
+                            E-mail
+                        </label>
+                        <label class="opcao">
+                            <input type="radio" name="retorno" value="telefone">
+                            Telefone
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Áreas de interesse</legend>
+                    <div class="opcoes">
+                        <label class="opcao">
+                            <input type="checkbox" name="interesse" value="web">
+                            Desenvolvimento Web
+                        </label>
+                        <label class="opcao">
+                            <input type="checkbox" name="interesse" value="ui">
+                            UX/UI
+                        </label>
+                        <label class="opcao">
+                            <input type="checkbox" name="interesse" value="programacao">
+                            Programação
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" required minlength="10"
+                        placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+
+                <button class="botao" type="submit">Enviar mensagem</button>
+            </form>
+            <div id="feedbackForm" class="feedback" role="status" aria-live="polite" hidden></div>
+            <p class="pequeno">* Campo obrigatório. A validação é feita com JavaScript e o que você digita é salvo
+                como rascunho neste navegador (localStorage).</p>
+            <p class="pequeno"><button class="link-botao" id="limparRascunho" type="button">Limpar rascunho salvo</button></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 José Luiz dos Santos</p>
+        <p>Portfólio acadêmico — Desenvolvimento Front-end para Web</p>
+    </footer>
+
+</body>
+
+</html>
