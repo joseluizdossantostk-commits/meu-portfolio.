@@ -3,8 +3,7 @@
 
 "use strict";
 
-/* ---------- Tema claro/escuro (todas as páginas) ----------
-   A escolha fica salva em localStorage e vale para o site inteiro. */
+/* Tema claro/escuro (todas as páginas)  */
 const CHAVE_TEMA = "cp3:tema";
 
 function lerTema() {
@@ -19,7 +18,7 @@ function salvarTema(tema) {
     try {
         localStorage.setItem(CHAVE_TEMA, tema);
     } catch (erro) {
-        /* sem persistência: o tema continua valendo apenas nesta página */
+       
     }
 }
 
@@ -33,7 +32,6 @@ function aplicarTema(tema) {
     }
 }
 
-// Aplica já no <head> para evitar o "flash" de tema errado ao carregar.
 (function () {
     const salvo = lerTema();
     const preferido = window.matchMedia("(prefers-color-scheme: dark)").matches ? "escuro" : "claro";
@@ -51,7 +49,6 @@ function iniciarTema() {
     });
 }
 
-/* ---------- Gráfico em canvas (somente em graficos.html) ---------- */
 function desenharGrafico() {
     const canvas = document.getElementById("meuCanvas");
     if (!canvas) return;
@@ -95,8 +92,7 @@ function desenharGrafico() {
     });
 }
 
-/* ---------- Formulário de contato (formulario.html) ----------
-   Validação com mensagens na tela + rascunho salvo em localStorage. */
+
 const CHAVE_RASCUNHO = "cp3:rascunhoFormulario";
 
 function validarCampo(form, nome) {
